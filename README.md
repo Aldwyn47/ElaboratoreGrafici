@@ -101,11 +101,12 @@ _Once the final command has finished, an "out" directory can be found within the
 
 ## Bug noti _(Known bugs)_
 
+Lista bug:
 - Il prototipo è al momento in grado di processare solo dati numerici e si comporta in modo imprevedibile in caso di input differenti.
 - Nel caso dei grafici di tipo "Linea" è assente un meccanismo di interpolazione in grado di mostrare linee i cui punti
 di inizio o fine giacciono fuori dal grafico. La conseguenza principale è che in caso di zoom potrebbero venir "cancellate" inavvertitamente alcune linee (o alcune porzioni di esse) sulla base della dimensione del rettangolo trascinato dall'utente.
 
-
+_Bug list:_
 - _The prototype is currently capable of processing exclusively numeric data. Input data of a different type will produce unpredictable effects._
 - _"Linea" (Line plot) currently lacks an interpolation feature capable of showing lines that have either their starting or ending point outside the boundaries. The main consequence of this is that some lines (or at least a portion of them) might not be displayed correctly depending on how wide is the zoom rectangle dragged by the user._
 
