@@ -32,14 +32,14 @@ Il modulo pyinstaller serve invero solo qualora si voglia anche impacchettare l'
 L'applicazione usa anche i moduli D3 e dom-to-image di node.js, ma essi sono già inclusi nel codice sorgente. Il modulo D3 è però in formato Zip, ragion per cui prima di procedere con l'installazione è necessario estrarne i file. Per farlo è sufficiente recarsi nella directory "\SourceCode\script\" e usare l'opzione "Estrai tutto" sul file "D3.zip". Supponendo che node.js e python siano già installati, per poter includere correttamente anche le rispettive dipendenze è sufficiente spostarsi nella directory "SourceCode" (quella che contiene tutto il codice sorgente, facilmente identificabile dalla presenza del file "package.json") e lanciare i seguenti comandi:
 
 ```bash
-	npm install
-	pip install -r ".\python\requirements.txt"
+npm install
+pip install -r ".\python\requirements.txt"
 ```
 
 Il primo comando si occuperà di installare i moduli di node.js necessari (creando così la cartella "node-modules"), mentre il secondo installerà i moduli usati da python. Affinché sia possibile lanciare l'applicazione è però necessario che risulti installato anche Git sul sistema in uso dall'utente. Supponendo che Git sia presente (in caso contrario è sufficiente installarlo), l'applicazione può essere lanciata (sempre dalla cartella "SourceCode") tramite il comando:
 
 ```bash
-	npm start
+npm start
 ```
 
 
@@ -66,14 +66,14 @@ _The pyinstaller module is actually only needed for application bundling (see se
 _The app effectively uses the D3 and dom-to-image node.js modules as well, but those are already included in the source code. The D3 module is however in .zip format, meaning it must be unzipped before proceeding with installation. In order to do so, use the "Extract All" option on the "D3.zip" file found in the "\SourceCode\script\" directory. Assuming both node.js and python are already installed, in order to correctly include the respective dependencies the following commands will suffice:_
 
 ```bash
-	npm install
-	pip install -r ".\python\requirements.txt"
+npm install
+pip install -r ".\python\requirements.txt"
 ```
 
 _Both of them must be run only after changing the working directory to "SourceCode" (the one containing all the source code, easily recognizable by the presence of the "package.json" file). The first command takes care of installing the necessary node modules (thus creating the "node-modules" directory) while the secondo one installs the modules used by python. In order to launch the application it is also necessary for Git to be present on the user's system. Assuming the user already has Git (otherwise installing it will suffice), the app can be launched by running the following command from the "SourceCode" directory:_
 
 ```bash
-	npm start
+npm start
 ```
 
 ## Impacchettamento in un singolo eseguibile _(Application Bundling)_
