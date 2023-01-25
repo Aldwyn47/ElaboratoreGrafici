@@ -76,7 +76,7 @@ _Both of them must be run only after changing the working directory to "SourceCo
 	npm start
 ```
 
-##Impacchettamento in un singolo eseguibile _(Application Bundling)_
+## Impacchettamento in un singolo eseguibile _(Application Bundling)_
 
 Per impacchettare l'applicazione in un singolo eseguibile si può sfruttare electron-forge, ma prima di farlo è necessario convertire preventivamente a eseguibili anche gli script di python che vengono lanciati dal processo principale. Per prima cosa, si suppone che siano già stati seguiti tutti i passi illustrati al punto 2 (installazione), incluso quello che provvede ad aggiornare la directory corrente a "SourceCode". A quel punto, per poter creare un file .exe a partire dal codice sorgente vanno lanciati in ordine i seguenti comandi:
 
