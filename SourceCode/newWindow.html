@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Elaboratore grafici</title>
+        <link rel="stylesheet" href="./css/layoutFinestra.css">
+        <link rel="stylesheet" href="./css/navigationBar.css">
+        <link rel="stylesheet" href="./css/animazioneLoading.css">
+        <link rel="stylesheet" href="./css/slider.css">
+        <link rel="stylesheet" href="./css/bottoni.css">
+        <link rel="stylesheet" href="./css/popup.css">
+        <link rel="stylesheet" href="./css/legenda.css">
+        <script src="./script/D3/d3/dist/d3.js"></script>
+        <script src="./script/dom-to-image.js"></script>
+        <script src="./script/scriptFunzioniGrafici.js"></script>
+        <script src="./script/scriptPulsantiera.js"></script>
+        <script src="./script/scriptFinestra.js"></script>
+    </head>
+    <body onload="windowInitialize()" id="body">
+      <div id="masterWrapper" class="masterWrapper">
+            <div class="navigationBar" id="navigationBar">
+                <div>
+                    <div class="navigationElement dropbtn" id="tastoFile">File</div>
+                    <div id="navigationMenu" class="dropdown-content">
+                        <label for="selezioneFile" id="labelSelezioneFile" class="navigationElement menuFileElement">Carica dati da elaborare</label>
+                        <input id="selezioneFile" type="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel, text/plain">
+                        <label class="navigationElement menuFileElement" id="tastoSalva">Salva grafico come immagine</label>
+                    </div>
+                </div>
+                <div class="navigationElement" id="testoFileSelezionato"></div>
+            </div>
+            <div id="mainPanelWrapper" class="mainPanelWrapper">
+                <div class="graphicOptionBar" id="graphicOptionBar" hidden="true">
+                    <div class="buttonWrapper" id="wrapperTipoGrafico">
+                        <span class="introBottoni" id="testoTipoGrafico">Tipo di grafico:</span>
+                        <select id="tipoGrafico" class="bottonePremibile" title="Seleziona il tipo di grafico">
+                            <option>Linea</option>
+                            <option>Istogramma</option>
+                            <option>Scatterplot</option>
+                        </select>
+                    </div>
+                    <div class="wrapperPulsantiera" id="wrapperPulsantiera">
+                    </div>
+                </div>
+                <div class="graphicWrapper" id="graphicWrapper">
+                    <div class="wrapperPulsantini" id="wrapperPulsantini">
+                        <div class="wrapperLegenda" id="wrapperLegenda"></div>
+                        <img class="immaginePulsantini" id="tastoFullScreen" src="assets/fullScreen.png" title="Schermo intero">
+                    </div>
+                    <div class="graphicArea" id="graphicArea"></div>
+                </div>
+                <div id="animazioneLoading" class="animazioneLoading"></div>
+                <div id="rettangoloZoom" class="rettangoloZoom" hidden></div>
+                <div id="panelPopup" class="panelPopup"></div>
+                <div class="popup" id="boxPopup"></div>
+            </div>
+        </div>
+    </body>
+</html>

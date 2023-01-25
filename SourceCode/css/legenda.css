@@ -1,0 +1,36 @@
+/*Css per la legenda*/
+
+.wrapperLegenda {
+    width: auto;
+    flex-grow: 1;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background: black;
+    color: white;
+    text-align: center;
+    user-select: none;
+}
+
+.elementLegenda{
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.immagineLegenda{
+    height: 15px;
+    width: 15px;
+}
+
+.rigaLegenda{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

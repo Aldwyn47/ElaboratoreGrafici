@@ -1,0 +1,56 @@
+/*Css per la barra di navigazione in alto (quella che contiene "File" con annesso menù a tendina)*/
+.navigationBar{
+    background: #808080; /*COLORE*/
+    height:fit-content; /*l'altezza si adatta al contenuto */
+    display:flex;
+    justify-content: space-between; /*grazie a questa opzione "File" viene messo tutto a sinistra e il path del dataset caricato tutto in fondo a destra*/
+}
+
+/*Css per gli elementi che compaiono nella barra di navigazione in alto (e nel menù a tendina che si attiva cliccando su "File")*/
+.navigationElement{
+    color: white; /*COLORE DELLE SCRITTE*/
+    background: #808080; /*COLORE DELLO SFONDO, lo stesso della barra di navigazione*/
+    font-family: Arial;
+    font-size: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: default;
+    user-select: none;
+}
+
+/*Css per il tasto "File". Grazie a questa opzione, il colore diventa più chiaro quando l'utente ci passa sopra il cursore*/
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #C0C0C0; /*COLORE DEL TASTO FILE QUANDO VIENE CLICCATO*/
+}
+
+/*Css per il menù a tendina che si attiva quando l'utente clicca sul tasto "File"*/
+.dropdown-content {
+    display: none; /*Di base il menù è nascosto, e rimarrà tale finché l'utente non clicca*/
+    position: absolute; /*Quando viene mostrato, la sua posizione è sempre subito sotto il tasto "File"*/
+    z-index: 4; /*Grazie a questa opzione, la sua visibilità prevale su quella di eventuali altri elementi della pagina*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*ombreggiatura*/
+    border : 1px solid #808080; /*bordo*/
+    
+}
+
+/*Css per le singole opzioni del menù a tendina del tasto "File"*/
+.dropdown-content label {
+    display: block;
+}
+.dropdown-content label:hover { /*Quando l'utente passa il mouse sulla singola opzione, questa assume colore più chiaro*/
+    background-color: #C0C0C0;  /*COLORE DELLE OPZIONI QUANDO L'UTENTE CI PASSA IL MOUSE SOPRA*/
+}
+
+/*Opzione css per la classe "show", che viene applicata al menù a tendina per renderlo visibile quando l'utente clicca sul tasto "File"*/
+.show {
+    display:block;
+}
+
+/*Opzione css per rendere invisibile il tag input usato per selezionare il file da caricare e l'opzione per salvare il grafico.
+L'opzione per salvare il grafico viene resa visibile appena viene creato il primo grafico.
+Il tag input invece è sempre occultato in quanto ci si interagisce tramite la sua label associata.*/
+#selezioneFile, #tastoSalva{
+    display: none;
+}

@@ -1,0 +1,44 @@
+.introBottoni{
+    flex-basis: 50%;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 700;
+}
+
+.bottonePremibile{
+    align-self: center;
+    color: white;
+    background: black;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-family: sans-serif;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.buttonWrapper{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.wrapperPulsantiera{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#wrapperAsseY{
+    margin-top: 0px;
+}
