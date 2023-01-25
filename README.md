@@ -111,6 +111,7 @@ di inizio o fine giacciono fuori dal grafico. La conseguenza principale è che i
 
 ## Funzionalità da sviluppare in futuro _(Features to add in future versions)_
 
+Lista funzionalità:
 - Possibilità di caricare più data set su cui lavorare nella stessa finestra
 - Possibilità di mostrare più grafici nella stessa finestra
 - Possibilità di eseguire operazioni sui dati prima di mostrarli (ad esempio calcolare e mostrare il rapporto tra una variabile e un'altra invece che le singole variabili individualmente)
@@ -118,7 +119,7 @@ di inizio o fine giacciono fuori dal grafico. La conseguenza principale è che i
 un valore numerico che permetta il suo trattamento)
 - Interpolazione per il grafico di tipo "Linea"
 
-
+_Features list:_
 - _Loading multiple data sets in the same window_
 - _Showing multiple plots in the same window_
 - _Running operations on data before showing it (for example computing the ratio between two variables and showing the result instead of showing the two variables individually)_
